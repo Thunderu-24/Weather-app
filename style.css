@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #5f41e4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.list{
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 30px;
+    scrollbar-width: none;
+    border-top: 1px solid #beb0ff;
+}
+
+.list:hover{
+    scrollbar-width: thin;
+    scrollbar-color: #bfbfbf transparent;
+}
+
+#search-input{
+    height: 45px;
+    width: 100%;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+#search-input::placeholder{
+    text-transform: capitalize;
+}
+
+.location{
+    border: 1px solid #beb0ff;
+    height: 45px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.location:hover{
+    background-color: #beb0ff;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    position: static;
+}
+
+.search-icon{
+    width: 10%;
+    border: 0px solid #beb0ff;
+    padding-top: 5px;
+    position: relative;
+    bottom: 40px;
+    background-color: transparent;
+    left: 87%;
+}
+.search-icon:hover{
+    background-color: whitesmoke;
+}
+
+.search-bar{
+    display: grid;
+    grid-template-columns: 80% 15%;
+    grid-gap: 5%;
+}
+
+/* ::-webkit-scrollbar {
+    width: 100px;
+    height: 100px; 
+} */
+/* 
+.list::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+} */
+
+.list-item-img{
+    width: 30px;
+    height: 30px;
+    
+}
+
+.container{
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    height: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list-item{
+    margin-right: 20px;
+    text-align: center;
+}
+
+.main{
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+
+
+.main-sub-div{
+    text-align: center;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:500px){
+    .container{
+        width: 80%;
+        height: 80%;
+    }
+    
+
+    
+
+    
+    
+    
+}
+
