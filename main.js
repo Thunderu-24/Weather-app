@@ -161,7 +161,7 @@ const imgData = {
 };
 
 const apiCalling = async (cityname) => {
-  const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityname}&days=2`;
+  const url = `https://api.weatherapi.com/v1//forecast.json?key=${apiKey}&q=${cityname}&days=2`;
   try {
     const response = await fetch(url);
     const data = await response.json();
