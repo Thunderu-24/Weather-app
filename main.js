@@ -165,7 +165,7 @@ const apiCalling = async (cityname) => {
   try {
     const response = await fetch(url);
     const data = await response.json();
-    // console.log(data);
+    console.log(data);
     const temperature = data.current.temp_c;
     const description = data.current.condition.text;
     const img1 = data.current.condition.icon;
